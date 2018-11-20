@@ -1,5 +1,6 @@
 {
   "name": "netsuite-jest",
+  "license": "AML",
   "jest": {
     "preset": "jest-puppeteer"
   },
