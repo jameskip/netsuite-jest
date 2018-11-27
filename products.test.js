@@ -42,5 +42,6 @@ describe('Products - Stainless', () => {
 
   it('should add 20oz Stainless, Air Force Primary ', (done) => createOrder(done, '[data-select="rambler-tumbler-20oz"]', '[title="Shop College Logo Custom YETI Ramblers"]', '[data-key="air-force-primary-1"]'))
 
-  // it('should add 30oz Stainless, Air Force Primary ', (done) => createOrder(done, '[data-select="rambler-tumbler-30oz"]', '[title="Shop College Logo Custom YETI Ramblers"]', '[data-key="air-force-primary-1"]'))
+  // test('should add 30oz Stainless, Air Force Primary ', (done) => createOrder(done, '[data-select="rambler-tumbler-30oz"]', '[title="Shop College Logo Custom YETI Ramblers"]', '[data-key="air-force-primary-1"]'))
+
 })
