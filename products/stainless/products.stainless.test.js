@@ -11,26 +11,26 @@ const createOrder = async (done, product, category, embellishment) => {
   await page.waitForSelector(product)
   await page.click(product)
   await page.waitForSelector(category)
-  // await page.screenshot({ path: `${product}.png` })
+  await page.screenshot({ path: `${product}.png` })
   await page.click(category)
 
   // select embellishment
-  // await page.screenshot({ path: `${product}-2.png` })
+  await page.screenshot({ path: `${product}-2.png` })
   await page.waitForSelector(embellishment)
-  // await page.screenshot({ path: `${product}-3.png` })
+  await page.screenshot({ path: `${product}-3.png` })
   await page.click(embellishment)
 
   // submit design
-  // await page.screenshot({ path: `${product}-4.png` })
+  await page.screenshot({ path: `${product}-4.png` })
   await page.waitForSelector('[data-ui="design-submit"]')
   await page.click('[data-ui="design-submit"]')
-  // await page.screenshot({ path: `${product}-5.png` })
+  await page.screenshot({ path: `${product}-5.png` })
 
   // approve design
   await page.waitForSelector('[data-ui="design-approve"]')
   await page.click('[data-ui="design-approve"]')
   await page.waitForNavigation()
-  // await page.screenshot({ path: `${product}-6.png` })
+  await page.screenshot({ path: `${product}-6.png` })
 
   await page.close()
 
